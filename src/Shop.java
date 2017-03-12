@@ -2,29 +2,16 @@
  * Created by Lasanga Madushan on 3/10/2017.
  */
 public class Shop {
+    private String name;
+    private int id;
+    private Item[] items;
+    private Database database;
+    Shop(String name, int id){
+        this.name=name;
+        this.id=id;
+    }
+    public void addItem(Item item){
 
-}
-class Database{
-    private double money;
-    Database(){
-        setMoney(0.0);
     }
-
-    public double getMoney() {
-        return money;
-    }
-
-    public void setMoney(double money) {
-        this.money += money;
-    }
-}
-class Item{
-    private String id;
-    private double price;
-    private static int quantity=0;
-    Item(String id, double price){
-        this.id= id;
-        this.price=price;
-        quantity++;
-    }
+    public int getId(){return id;}
 }
